@@ -1,0 +1,40 @@
+{
+  "name": "front_end_project",
+  "type": "project:application",
+  "paths": {
+    "root": "src",
+    "resources": "resources",
+    "elements": "resources/elements",
+    "attributes": "resources/attributes",
+    "valueConverters": "resources/value-converters",
+    "bindingBehaviors": "resources/binding-behaviors"
+  },
+  "transpiler": {
+    "id": "typescript",
+    "fileExtension": ".ts"
+  },
+  "build": {
+    "options": {
+      "server": "dev",
+      "extractCss": "prod",
+      "coverage": false
+    }
+  },
+  "platform": {
+    "hmr": false,
+    "open": false,
+    "port": 8080,
+    "host": "localhost",
+    "output": "dist"
+  },
+  "dependencies": [
+    {
+      "name": "@syncfusion/ej2",
+      "path": "../node_modules/@syncfusion/ej2/dist/",
+      "main": "ej2.min",
+      "resources": [
+        "styles/material.css"
+      ]
+    }
+  ]
+}
